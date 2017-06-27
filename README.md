@@ -1,6 +1,7 @@
-# Blossues
-
-<center>*GitHub Issues APIs + `fetch` - Unnecessary keys/values = Blog*</center>
+<center>
+  <h1>Blossues</h1>
+  <em>GitHub Issues APIs + Fetch - Unnecessary keys/values = Blog</em>
+</center>
 
 - With GitHub Issues we have:
     + A nice Markdown editor
