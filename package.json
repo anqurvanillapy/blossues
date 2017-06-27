@@ -1,0 +1,35 @@
+{
+  "name": "blossues",
+  "version": "0.1.0",
+  "description": "GitHub Issues as a blog",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anqurvanillapy/blossues.git"
+  },
+  "keywords": [
+    "github",
+    "issues",
+    "blog"
+  ],
+  "author": "AnqurVanillapy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anqurvanillapy/blossues/issues"
+  },
+  "homepage": "https://github.com/anqurvanillapy/blossues#readme",
+  "devDependencies": {
+    "babel-core": "^6.25.0",
+    "babel-jest": "^20.0.3",
+    "babel-loader": "^7.1.0",
+    "babel-preset-env": "^1.5.2",
+    "jest": "^20.0.4",
+    "node-fetch": "^1.7.1",
+    "source-map-loader": "^0.2.1",
+    "webpack": "^3.0.0"
+  }
+}
