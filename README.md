@@ -10,8 +10,9 @@
   + A nice Markdown editor
   + Labels/milestones
   + Comments with reactions
+  + Pagination
 - When `fetch`-ing GitHub APIs we can say bye to
-[CORS](https://en.wikipedia.org/wiki/Cross-origin_resource_sharing)
+[ACAO](https://en.wikipedia.org/wiki/Cross-origin_resource_sharing)
 - So with *Blossues* we can easy blogging!
 
 ## Install

@@ -13,6 +13,7 @@ it('should receive list of issues by original user with valid keys',
     const data = await fetcher.next()
 
     expect(typeof data).toEqual('object')
+    expect(data.length).toBeGreaterThan(0)
 
     const nonUserPosts = data.filter(d => d.user !== fetcher.user)
     expect(nonUserPosts.length).toBe(0)
@@ -37,4 +38,11 @@ it('should not contain any pull requests', async function () {
   const fetcher = await new Blossues('babel', 'babel', 'https:')
   const data = await fetcher.next()
   expect('pull_request' in data).not.toBeTruthy()
+})
+
+it('should fetch more pages successfully', async function () {
+  const fetcher = await new Blossues('babel', 'babel', 'https:')
+  await fetcher.next()
+  await fetcher.next()
+  expect(fetcher._pagecnt.last).toBeGreaterThan(0)
 })
